@@ -60,7 +60,6 @@ describe('chatterbox', function() {
         expect(ajaxUrl).to.equal(Parse.server);
         done();
       });
-
     });
   });
 
@@ -84,6 +83,7 @@ describe('chatterbox', function() {
 
   describe('events', function() {
     it('should add a friend upon clicking their username', function() {
+      console.log(Friends);
       sinon.spy(Friends, 'toggleStatus');
 
       App.initialize();

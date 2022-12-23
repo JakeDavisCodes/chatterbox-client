@@ -42,4 +42,11 @@ var App = {
     App.$spinner.fadeOut('fast');
     FormView.setStatus(false);
   }
+
+
+  //clickHandlers
 };
+
+$('.username').on('click', function(event) {
+  console.log(event);
+});

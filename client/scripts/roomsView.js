@@ -16,7 +16,9 @@ var RoomsView = {
   },
 
   renderRoom: function(roomname) {
-    // TODO: Render out a single room.
+    $('<div room>', {
+      roomname: roomname
+    }).appendTo($('#rooms select'));
   },
 
   handleChange: function(event) {

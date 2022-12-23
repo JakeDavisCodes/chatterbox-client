@@ -15,12 +15,16 @@ var MessagesView = {
   },
 
   renderMessage: function(message) {
+    $('<div message>', {
+      username: message.username,
+      text: message.text,
+      roomname: message.roomname
+    }).appendTo(this.$chats);
     // TODO: Render a single message.
   },
 
   handleClick: function(event) {
-    // TODO: handle a user clicking on a message
-    // (this should add the sender to the user's friend list).
+    console.log(event);
   }
 
 };
