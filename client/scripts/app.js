@@ -19,8 +19,7 @@ var App = {
     App.startSpinner();
     App.fetch(App.stopSpinner);
 
-    // TODO: Make sure the app loads data from the API
-    // continually, instead of just once at the start.
+    App.fetch(Parse.server);
   },
 
   fetch: function(callback = ()=>{}) {
@@ -44,9 +43,7 @@ var App = {
   }
 
 
-  //clickHandlers
-};
 
-$('.username').on('click', function(event) {
-  console.log(event);
-});
+};
+//clickHandlers
+

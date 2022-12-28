@@ -6,20 +6,23 @@ var MessagesView = {
   $chats: $('#chats'),
 
   initialize: function() {
-    // TODO: Perform any work which needs to be done
-    // when this view loads.
+    this.render();
   },
 
   render: function() {
-    // TODO: Render _all_ the messages.
+    let msgs = document.getElementsByClassName('message');
+    console.log(msgs);
+
   },
 
   renderMessage: function(message) {
-    $('<div message>', {
-      username: message.username,
-      text: message.text,
-      roomname: message.roomname
-    }).appendTo(this.$chats);
+    let msg = $('<div message>', message);
+    console.log(msg);
+    // msg.addEventListener('click', function() {
+    //   friends.toggleStatus();
+    // });
+    msg.appendTo(this.$chats);
+    console.log(this.$chats[0]);
     // TODO: Render a single message.
   },
 
