@@ -14,12 +14,6 @@ var Friends = {
     this._data.push(friend);
   },
 
-<<<<<<< HEAD
-  toggleStatus: function() {
-
-  }
-
-=======
   toggleStatus: function (friend) {
     if (!this._data.includes(friend)) {
       this.addFriend(friend);
@@ -28,5 +22,4 @@ var Friends = {
       this._data.splice(index, 1);
     } MessagesView.render();
   }
->>>>>>> eb15ee73fa2bc31eac7b11eeaab4109ec4a65dd9
 };

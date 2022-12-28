@@ -20,15 +20,9 @@ var RoomsView = {
   },
 
   renderRoom: function(roomname) {
-<<<<<<< HEAD
-    $('<div room>', {
-      roomname: roomname
-    }).appendTo($('#rooms select'));
-=======
     // TODO: Render out a single room.
     var $room = $('<option>' + roomname + '</option>');
     $room.appendTo(this.$select);
->>>>>>> eb15ee73fa2bc31eac7b11eeaab4109ec4a65dd9
   },
 
   handleChange: function(event) {

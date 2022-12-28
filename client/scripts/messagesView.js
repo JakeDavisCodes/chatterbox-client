@@ -8,29 +8,6 @@ var MessagesView = {
 
   initialize: function() {
     this.render();
-<<<<<<< HEAD
-  },
-
-  render: function() {
-    let msgs = document.getElementsByClassName('message');
-    console.log(msgs);
-
-  },
-
-  renderMessage: function(message) {
-    let msg = $('<div message>', message);
-    console.log(msg);
-    // msg.addEventListener('click', function() {
-    //   friends.toggleStatus();
-    // });
-    msg.appendTo(this.$chats);
-    console.log(this.$chats[0]);
-    // TODO: Render a single message.
-  },
-
-  handleClick: function(event) {
-    console.log(event);
-=======
     $('#chats').on('click', '.username', function (event) {
       console.log(event.currentTarget.innerText);
       Friends.toggleStatus(event.currentTarget.innerText.substr(1));
@@ -77,7 +54,6 @@ var MessagesView = {
 
   handleClick: function(event) {
     console.log($(event.currentTarget));
->>>>>>> eb15ee73fa2bc31eac7b11eeaab4109ec4a65dd9
   }
 
 };
